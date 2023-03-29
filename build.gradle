@@ -10,7 +10,7 @@ plugins {
 
 wrapper {
     distributionType = Wrapper.DistributionType.ALL
-    gradleVersion = "6.6.1"
+    gradleVersion = "7.3.3" //was "6.6.1"
 }
 
 repositories {
@@ -24,11 +24,11 @@ repositories {
 
 project.ext.pluginId = rootProject['project.pluginId']
 version = rootProject['project.version']
-group = 'com.geoffgranum'
+group = 'io.github.jobernas'
 
 pluginBundle {
-    website = 'https://github.com/ggranum/gradle-changelog-plugin/'
-    vcsUrl = 'https://github.com/ggranum/gradle-changelog-plugin/'
+    website = 'https://github.com/jobernas/gradle-changelog-plugin'
+    vcsUrl = 'https://github.com/jobernas/gradle-changelog-plugin'
     tags = ['conventional changelog', 'git']
 }
 
@@ -60,7 +60,7 @@ jar {
     manifest {
         attributes 'Implementation-Title': 'Conventional Changelog For Gradle',
                 'Implementation-Version': project.version,
-                'Built-By': 'Geoff Granum',
+                'Built-By': 'Geoff Granum, Joao Luis',
                 'Built-Date': new Date(),
                 'Built-JDK': System.getProperty('java.version'),
                 'Built-Gradle': gradle.gradleVersion
@@ -95,7 +95,7 @@ changelog {
     file "CHANGELOG.md"
     versionNum "v$project.version"
     versionText "Fatalist Zebra"
-    repoUrl "https://github.com/ggranum/gradle-changelog-plugin"
+    repoUrl "https://github.com/jobernas/gradle-changelog-plugin"
     match "^fix|^feat|^doc|^perf|^refactor|BREAKING"
     //from "0.3.0"
     //to "HEAD"

@@ -3,7 +3,6 @@ pluginManagement {
         jcenter()
         mavenLocal()
         gradlePluginPortal()
-
     }
 }
 rootProject.name = 'gradle-conventional-changelog'

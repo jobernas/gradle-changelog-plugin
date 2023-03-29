@@ -1,4 +1,12 @@
-<a name="v0.3.1"></a>
+<a name="v0.3.3"></a>
+# v0.3.3 "Pink Mouse" (2023/03/29)
+
+## Features
+
+* **build:** Added Support for Static Header in the Changelog Document.
+
+<a name="v0.3.2"></a>
+
 # v0.3.1 "Fatalist Zebra" (2020/09/14)
 
 
