@@ -21,7 +21,8 @@ repositories {
     }
 }
 
-
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 project.ext.pluginId = rootProject['project.pluginId']
 version = rootProject['project.version']
 group = 'io.github.jobernas'
@@ -42,7 +43,6 @@ gradlePlugin {
         }
     }
 }
-
 
 dependencies {
     implementation gradleApi()
