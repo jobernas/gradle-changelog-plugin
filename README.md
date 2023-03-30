@@ -13,7 +13,7 @@ Apply the `changelog` plugin to your plugins block
 
 ```groovy
 plugins {
-    id 'com.jobernas.gradle-conventional-changelog' version "0.3.3"
+    id 'io.github.jobernas.gradle-conventional-changelog' version "0.3.3"
 }
 ```
 
@@ -47,10 +47,10 @@ changelog {
     versionText 'Electric Lama' //Defaults to an empty string.
     
     //URL of the repository where the commits can be found. Plugin will append /commits at the end.    
-    repoUrl 'https://github.com/marcpoppleton/gradle-changelog-plugin' //Defaults to an empty string.
+    repoUrl 'https://github.com/jobernas/gradle-changelog-plugin' //Defaults to an empty string.
     
     //URL of the bug tracker where closed issues can be found. Plugin will append /issues at the end.
-    trackerUrl 'https://github.com/marcpoppleton/gradle-changelog-plugin' //Defaults to an empty string.
+    trackerUrl 'https://github.com/jobernas/gradle-changelog-plugin' //Defaults to an empty string.
     
     //lower limit to filter the git log command ( tag or commit hash)
     from '0.0.1' //Defaults to previous git tag found or first commit if none found.
